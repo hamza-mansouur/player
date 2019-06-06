@@ -1,0 +1,84 @@
+
+    .content-tabs { display: table; width: 100%; oborder: 1px dashed red; }
+    .content-tab { display: table-cell; border-right: 1px solid #ffffff; height: 40px; font-size: 1.2em; vertical-align: middle; text-align: center; background-color: #e8e5e0; color: #9a9996; text-transform: uppercase; cursor: pointer; oborder: 5px dashed red; }
+    .content-tab:hover {
+        background-color: #3d7acc;
+        color: #ffffff;
+    }
+    .content-tab.active { background-color: #3d7acc; color: #ffffff; ocursor: default; }
+    .content-tab-child { display: none; }            /* display: none; incompatible avec iScroll.js */
+    .content-tab-child.active { display: block; }
+    .content-container-0 { oposition: relative; owidth: 100%; oheight: auto; oborder: 5px dashed red; }
+    .content-container { oposition: absolute; owidth: 100%; oborder: 1px dashed purple; }
+    .criteria-hexpand { display: table; width: 100%; oborder: 1px dashed red; }
+    .criteria-vcentered { display: table-cell; width: 100%; oheight: 80px; padding-top: 10px; padding-bottom: 20px; vertical-align: middle; text-align: center; oborder: 4px dashed red; }
+
+    @media (min-width: 1050px) {
+        /*.result-number::after{ content: "large"; color: red; }*/
+        .criteria-container { display: inline-block; text-align: center; oborder: 1px solid pink; }
+        .criteria-container-1-2 { display: inline-block; }
+        .criteria-block-1 { float: left; padding-right: 10px; border-right: 1px solid #000000; }
+        .criteria-block-2 { float: left; margin-left: 10px; omargin-right: 10px; }
+        .criteria-container-3-4 { display: inline-block; }
+        .criteria-block-3 { float: left; omargin-left: 10px; margin-right: 10px; }
+        .criteria-block-4 { float: left; padding-left: 10px; border-left: 1px solid #000000; }
+    }
+
+    @media (min-width: 740px) and (max-width: 1050px) {
+        /*.result-number::after{ content: "moyen"; color: red; }*/
+        .criteria-container { display: inline-block; text-align: center; oborder: 1px solid pink; }
+        .criteria-container-1-2 { display: block; margin-bottom: 4px; }
+        .criteria-block-1 { display:inline-block; ofloat: left; padding-right: 10px; border-right: 1px solid #000000; }
+        .criteria-block-2 { display:inline-block; ofloat: right; margin-left: 10px; omargin-right: 10px; }
+        .criteria-container-3-4 { display: block; overtical-align: middle; }
+        .criteria-block-3 { ofloat: left; display:inline-block; vertical-align: middle; oclear: both; ofloat: left; margin-left: 10px; margin-right: 10px; }
+        .criteria-block-4 { ofloat: left; display:inline-block; vertical-align: middle; ofloat: right; padding-left: 10px; border-left: 1px solid #000000; }
+    }
+
+    @media (max-width: 740px) {
+        /*.result-number::after{ content: "petit"; color: red; }*/
+        .criteria-container { display: inline-block; text-align: center; oborder: 1px solid pink; }
+        .criteria-container-1-2 { display: block; }
+        .criteria-block-1 { display: block; margin-bottom: 4px; text-align: center; ofloat: left; padding-right: 10px; oborder-right: 1px solid #000000; }
+        .criteria-block-2 { display: block; margin-bottom: 4px; text-align: center; oclear: left; ofloat: left; margin-left: 10px; margin-right: 10px; }
+        .criteria-container-3-4 { display: block; }
+        .criteria-block-3 { display: inline-block; vertical-align: middle; text-align: center; oclear: left; ofloat: left; margin-left: 10px; margin-right: 10px; }
+        .criteria-block-4 { display: inline-block; vertical-align: middle; text-align: center; ofloat: left; padding-left: 10px; oborder-left: 1px solid #000000; }
+    }
+    
+    .button-search {
+        background-color: #3d7acc;
+        border: 0px none transparent;
+        width: 26px;
+        height: 26px;
+        background-image: url("icons/button-rechercher.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .button-search:hover {
+        opacity:0.7;
+    }
+
+    .criteria-container DIV { oborder: 1px solid orangered; }
+    
+    BUTTON.criteria-date-button { }
+    BUTTON.criteria-date-button:hover {
+        background-color: #979797;
+        color: #ffffff;
+        background-color: #d7d7d7;
+        color: #4d4d4d;
+    }
+    BUTTON.criteria-date-button.active:hover {
+        background-color: #3d7acc;
+        color: #ffffff;
+    }
+    
+    .criteria-fulltext { background-image: url("icons/icon-fulltext.png"); background-repeat: no-repeat; background-position: 4px 3px; padding-left: 26px; width: 174px; }
+    .criteria-date-text { background-image: url("icons/icon-calendar.png"); background-repeat: no-repeat; background-position: 220px 3px; padding-right: 34px; width: 206px; }
+
+    SELECT.criteria-publication {
+        display: none;
+    }
+    SELECT.criteria-publication.active {
+        display: inline-block;
+    }

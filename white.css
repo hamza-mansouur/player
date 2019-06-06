@@ -1,0 +1,20 @@
+:root {
+    --text-baseColor: #4D4D4D;
+    --background-color: #FFFFFF;
+
+        /* Scroller */
+    --scroller-left: url('icons/scroller-left-white.png');
+    --scroller-right: url('icons/scroller-right-white.png');
+    --scroller-top: url('icons/scroller-top-white.png');
+    --scroller-bottom: url('icons/scroller-bottom-white.png');
+
+    /*icon-open*/
+    --icon-open: url('icons/icon-open-white.png');
+    --icon-open-left: url('icons/icon-open-left-white.png');
+    --icon-open-left-orange: url('icons/icon-open-left-orange-white.png');
+    --icon-open-left-green: url('icons/icon-open-left-green-white.png');
+    --icon-open-down: url('icons/icon-open-bottom-white.png');
+
+    --background-color-slideMenu: #e8e5e0;
+    --background-color-handle: #e8e5e0;
+}

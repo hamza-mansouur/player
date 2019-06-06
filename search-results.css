@@ -1,0 +1,27 @@
+    .result-wrapper { margin-top: 4px; margin-bottom: 4px; border-top: 1px solid #4d4d4d; oborder-bottom: 1px solid #4d4d4d; }
+    .result-items { margin-top: 4px; margin-bottom: 4px; padding-top: 10px; opadding-left: 10px; height: 340px; }    /* préciser la hauteur est nécessaire car lorsque pas de résultat immédiat et bouton getMoreResults() lorsque l'on demande plus de résultat, le bouton getMoreResults() est supprimé et la hauteur devient alors 0px avant de reprendre sa taille à l'arrivée des éléments */
+    .result-item { ofloat: left; display:inline-block; margin-right: 20px; omargin-bottom: 20px; width: 240px; height: 340px; overflow: hidden; }
+    .result-wrapper-container { position: relative; opadding-left: 20px; opadding-right: 20px; omargin-left: 20px; omargin-right: 20px; oborder: 1px dashed red; }
+    .result-number { display: inline-block; }
+    .result-item { background-color: #e6e6e6; cursor: pointer; }
+
+    .placeholder {
+        border: 5px solid orange;
+        owidth: 5px; oheight: 5px; width: 1px; height: 1px;
+        margin: 10px;
+        display:inline-block;
+        background-color: #e6e6e6;
+    }
+    /*.placeholder ::before {
+        content: "...";
+    }*/
+    .get-more-results {
+        ofloat: left; display:inline-block;
+        width: 240px; height: 340px;
+        oborder: 3px solid purple;
+        text-align: center;
+        font-size: 0.8rem;
+        cursor: pointer;
+        background-color: #e6e6e6;
+        vertical-align: bottom;
+    }

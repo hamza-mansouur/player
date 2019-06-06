@@ -1,0 +1,26 @@
+    .highlight {
+        oborder: 1px solid black;
+        margin: 0;
+        padding: 0;
+        opacity: 0.5;
+        filter: Alpha(Opacity=50);
+        oborder: 1px solid black;
+    }
+    .highlight-top {
+        border-top-left-radius: 20px;
+        -webkit-border-top-left-radius: 20px;
+        -moz-border-radius-topleft: 20px;
+
+        border-top-right-radius: 20px;
+        -webkit-border-top-right-radius: 20px;
+        -moz-border-radius-topright: 20px;
+    }
+    .highlight-bottom {
+        border-bottom-left-radius: 20px;
+        -webkit-border-bottom-left-radius: 20px;
+        -moz-border-radius-bottomleft: 20px;
+
+        border-bottom-right-radius: 20px;
+        -webkit-border-bottom-right-radius: 20px;
+        -moz-border-radius-bottomright: 20px;
+    }

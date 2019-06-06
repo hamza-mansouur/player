@@ -1,0 +1,5 @@
+.scroller-arrow { position: absolute; cursor: pointer; }
+.scroller-left { top: 50%; transform: translateY(-11px); width: 11px; height: 23px; left: -15px; background-image: var(--scroller-left); }
+.scroller-right { top: 50%; transform: translateY(-11px); width: 11px; height: 23px; right: -15px; background-image: var(--scroller-right); }
+.scroller-top { top: 0; left: 50%; transform: translateX(-11px); width: 23px; height: 11px; background-image: var(--scroller-top); }
+.scroller-bottom { bottom: 0; left: 50%; transform: translateX(-11px); width: 23px; height: 11px; background-image: var(--scroller-bottom); }

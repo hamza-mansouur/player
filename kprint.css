@@ -1,0 +1,171 @@
+    .print-dialog, .down-dialog {
+        text-indent: 0px;
+        owidth: 600px;
+        padding: 0;
+        margin: 0;
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+        oborder: 4px solid #c0c0c0;            /* à mettre dans une classe que l'on associe à la boite de dialogue */
+        white-space: nowrap;
+        background-color: transparent;
+        display: block;
+        obackground-color: lime;
+        padding: 4px;
+    }
+    .print-message, .down-message {
+        padding: 4px;
+        oborder: 1px solid #c0c0c0;
+        ofont-style: italic;
+        font-weight: normal;
+        font-size: 0.8em;
+    }
+
+    .message-alert-container {
+        font-size: 0.8em !important;
+        border: 1px solid indianred;
+        white-space: normal;
+        width: 320px;
+        text-align: center;
+    }
+
+    .message-container {
+        text-indent: 0px;
+        padding-left: 20px;
+        position: relative;
+        padding-left: 24px !important;
+        text-indent: -20px;
+        text-indent: 0px !important;
+        omargin: 30px;
+    }
+    .message-icon {
+        ofloat:left;
+        omargin:0 7px 20px 0;
+        margin-right: 6px;
+        display: inline-block;
+        position: absolute;
+        oposition: relative;
+        left: 4px;
+        otop: -20px;
+        obackground-color: red;
+        owidth: 100px;
+        oheight: 100px;
+        overtical-align: top;
+    }
+
+    .print-container, .down-container {
+        margin-top: 4px;
+        oborder: 4px solid #c0c0c0;
+        obackground-color: orange;
+        text-indent: 0px;
+        text-align: center;
+    }
+    .print-page, .down-page {
+        border: 1px solid #909090;
+        display: inline-block;
+        ofloat: left;
+        white-space: nowrap;
+        cursor: pointer;
+        opacity: 0.4;
+        obackground-color: blue;
+    }
+    .print-page:hover, .down-page:hover {
+        border: 1px solid #c0c0c0;
+        opacity: 1.0;
+    }
+    .print-thumbnail, .down-thumbnail {
+        width: 80px;
+        width: 160px;
+        height: auto;
+    }
+    .print-image, .down-image {
+        owidth: 80px;
+    }
+    /*.print-button, .down-button {
+        color: black;
+        cursor: pointer;
+        text-align: center;
+        padding: 4px;
+        border: 1px solid #909090;
+        background-color: #c0c0c0;
+        margin-top: 4px;
+    }
+    .print-button:hover, .down-button:hover {
+        border: 1px solid #c0c0c0;
+        background-color: #909090;
+    }*/
+    .print-link, .down-link {
+        cursor: pointer;
+        text-decoration: underline;
+        text-align: center;
+        font-size: 0.8em;
+        padding: 4px;
+        margin-top: 0px;
+    }
+    .print-link:hover, .down-link:hover {
+        color: #808080;
+    }
+    /* trop général .ui-dialog .ui-dialog-content {
+        padding: 2px !important;
+        obackground-color: black !important;    / * à mettre dans une classe que l'on associe à la boite de dialogue * /
+    }*/
+    .ui-dialog .ui-dialog-buttonpane {
+        border: 0px none transparent !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .dialog-print .ui-dialog-titlebar-close, .dialog-down .ui-dialog-titlebar-close {
+        display: none !important;            /* incroyable obligatoire sinon la boite n'apparait pas sur IPAD */
+    }
+    .dialog-print-player {
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    .dialog-print-player .ui-widget-header {
+        color: white;
+        font-weight: normal;
+        background-color: #3d7acc;
+        background-image: none;
+    }
+    .dialog-print-player .ui-widget-content {
+        color: black;
+    }
+    .dialog-print-player.ui-widget {                /* les deux classes sont sur la même DIV */
+        font-size: 12.6667px;
+    }
+    .dialog-print-player  .ui-widget-content input, .dialog-print-player  .ui-widget-content select, .dialog-print-player  .ui-widget-content textarea, .dialog-print-player  .ui-widget-content button {
+        color: black;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 12.6667px;
+    }
+    .dialog-print-player  .ui-widget-content button:hover {
+        color: white;
+    }
+    .dialog-print-player  .print-message {
+        font-size: 12.6667px;
+    }
+    .print-button-doublepage {
+        margin-top: 4px;
+        width: 100%;
+    }
+    .print-button-bothpage {
+        margin-top: 4px;
+    }
+    .print-button-range {
+        margin-top: 4px;
+    }
+    .print-button-allpages {
+        margin-top: 4px;
+    }
+    .dialog-print-player  .ui-state-default, .dialog-print-player  .ui-widget-content .ui-state-default, .dialog-print-player  .ui-widget-header .ui-state-default {
+        font-weight: normal;
+    }
+    .dialog-print-player  .ui-state-default, .dialog-print-player  .ui-widget-content .ui-state-default, .dialog-print-player  .ui-widget-header .ui-state-default {
+        background-color: white;
+        background-image: none;
+    }
+    .dialog-print-player  .ui-widget-content button.ui-button:hover {
+        color: black;
+    }
+    
+    

@@ -1,0 +1,183 @@
+.table-container {
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-col {
+    display: table-cell;
+}
+
+.block-header-right .link {
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.block-header-right { }        /* mon compte et déconnexion */
+
+.block-header-right .table-col {
+    padding:6px;
+    padding-bottom: 8px;
+}
+
+.row-mon-compte {
+}
+
+.row-mon-compte .table-col {
+    border-bottom: 1px solid #ffffff;
+}
+
+.row-deconnexion {
+}
+
+.block-header-right .table-col {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.header-container {
+    background-color: #3d7acc;
+    color: #ffffff;
+    margin-bottom: 1px;
+}
+
+.header-hcentered {
+    margin: 0 auto;
+}
+
+.header-hexpand {
+    display: table;
+    width: 100%;
+}
+
+.header-block {
+    display: table-cell;
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header-block-left {
+    text-align: right;
+    padding-right: 30px;
+    border-right: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.header-block-left-1 {
+    min-width: 200px;
+}
+
+.header-block-center {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 99%;
+}
+
+.header-block-center-1 {
+    min-width: 170px;
+}
+
+.header-block-right {
+    text-align: left;
+    padding-left: 30px;
+    border-left: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.header-block-right-1 {
+    min-width: 200px;
+}
+
+.header-block-center .logo IMG {
+    width: 170px;
+    height: auto;
+}
+
+/* padding also related to scrollers arrows */
+.content-hcentered {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page-accueil .content-hcentered {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* à mettre dans le bon sens max-width 800 puis max-width 560 */
+@media (max-width: 800px) {
+    .header-block-center {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header-block-center .logo IMG {
+        width: 170px;
+        height: auto;
+    }        /* logo.png */
+    .header-block-left-1 {
+        min-width: 160px;
+    }
+    .header-block-right-1 {
+        min-width: 160px;
+    }
+}
+@media (max-width: 720px) {
+    .header-block-left {
+        text-align: center;
+        padding-right: 0px;
+        font-size: 0.75em;
+    }
+    .header-block-right {
+        text-align: center;
+        padding-left: 0px;
+        font-size: 0.75em;
+    }
+    .header-block-center {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .header-block-left-1 {
+        min-width: 140px;
+    }
+    .header-block-right-1 {
+        min-width: 140px;
+    }
+    .block-header-right .link-text {
+        display: none;
+    }
+}
+@media (max-width: 560px) {
+    .header-block-left {
+        font-size: 0.70em;
+    }
+    .header-block-left-1 {
+        min-width: 100px;
+    }
+    .header-block-right-1 {
+        min-width: 100px;
+    }
+}
+@media (max-width: 480px) {
+    .header-block-left {
+        font-size: 0.65em;
+    }
+    .header-block-right {
+    }
+    .header-block-left-1 {
+        min-width: 70px;
+    }
+    .header-block-right-1 {
+        min-width: 70px;
+    }
+}

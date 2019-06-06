@@ -1,0 +1,275 @@
+    /* Slide-in Menu
+    ----------------------------------------------------------------------------------------------------*/
+    /*#content {
+        padding:40px 10px 10px 10px;
+        text-align:center;
+        text-shadow:0 1px 1px #000;
+        font-size:1.2em;
+    }
+
+    #slidedownmenu {
+        position:absolute;
+        width:100%;
+        left:0;
+        oz-index:999;
+        background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
+        background-image:-moz-linear-gradient(top, #999, #666 2%, #222);
+        background-image:-o-linear-gradient(top, #999, #666 2%, #222);
+        z-index: 300;
+    }
+
+    #slidedownmenu .handle {
+        -webkit-user-select:none;
+        position:absolute;
+        bottom:-28px;
+        bottom:-18px;
+        left:0;
+        width:100%;
+        height:28px;
+        border-top:1px solid #532500;
+        border-bottom:1px solid #111;
+        background:url(css/handle.png) no-repeat 50% 50%, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.1, #666), color-stop(0.8, #222));
+    / *    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.7);* /
+    }*/
+
+    /*#slidedownmenu ul {
+        display:block;
+        width:auto;
+    }
+
+    #slidedownmenu li {
+        display:block;
+        float:left;
+        margin:20px 10px;
+        text-align:center;
+        font-weight:bold;
+        color:#fff;
+        text-shadow:0 1px 1px #000;
+    }
+
+    #slidedownmenu li img {
+        display:block;
+        margin-bottom:4px;
+    }*/
+    /*#filters-container {
+        obackground-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
+        obackground-image:-moz-linear-gradient(top, #999, #666 2%, #222);
+        obackground-image:-o-linear-gradient(top, #999, #666 2%, #222);
+        background-color: #303030;
+        background-color: #fff;
+        oborder-top:1px solid #444;
+    }*/
+
+/* ----------------------------------------------------------------------------------- */
+/* down version */
+.slidemenu .handle { cursor: pointer; }
+.slidedownmenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    oz-index: 910;
+    background-color: #fff;
+}
+.slidemenu.slidedownmenu .slidemenu-0 {
+}
+.slidedownmenu .handle {
+    -webkit-user-select: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    border-top: 1px solid #532500;
+    border-bottom: 1px solid #111;
+    background: url('css/handle.png') no-repeat 50% 50%, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.1, #666), color-stop(0.8, #222));
+    /*    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.7);*/
+    background: url('css/handle.png') no-repeat 50% 50%, -moz-linear-gradient(top, #999, #666 2%, #222);
+    background: url('css/handle.png') no-repeat 50% 50%, -o-linear-gradient(top, #999, #666 2%, #222);
+}
+.slidedownmenu .content {
+    background-color: red;
+    padding: 10px; box-sizing: border-box;
+    padding-bottom: 38px;                    /* handle height */
+}
+
+/* playerKiosque */
+
+.playerKiosque .slidemenu.slidedownmenu .handle {
+    height: 6px;
+    border-top: 0px none transparent;
+    border-bottom: 0px none transparent;
+    background: none;
+    background-color: #e8e5e0;
+}
+.playerKiosque .slidemenu.slidedownmenu .subhandle {
+    position: relative;
+    background-position: 0% 0%;
+    background-image: var(--icon-open-down);
+    left: 50%;
+    transform: translateX(-50px); 
+    width: 100px;
+    height: 40px;
+    top: 100%;
+}
+.playerKiosque .slidemenu.slidedownmenu .content {
+    padding-bottom: 16px;                    /* handle height */
+    background-color: #e8e5e0;
+}
+    
+/* ----------------------------------------------------------------------------------- */
+/* up version */
+.slidemenu.slideupmenu {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    overflow: visible;
+    box-sizing: border-box;
+}
+.slidemenu.slideupmenu .slidemenu-0 {
+    position: relative; box-sizing: border-box;
+}
+.slidemenu.slideupmenu .handle {
+    position: relative;
+    top: 28px;                            /* le handle doit être intégré dans content via un padding car le calcul du décalage est fait comme ça: contentHeight - handleHeight */
+    border-top: 1px solid #532500;
+    border-bottom: 1px solid #111;
+    background: url('css/handle.png') no-repeat 50% 50%, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.1, #666), color-stop(0.8, #222));
+    /*    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.7);*/
+    background: url('css/handle.png') no-repeat 50% 50%, -moz-linear-gradient(top, #999, #666 2%, #222);
+    background: url('css/handle.png') no-repeat 50% 50%, -o-linear-gradient(top, #999, #666 2%, #222);
+    height: 28px;
+}
+.slidemenu.slideupmenu .content {
+    obackground-color: red;
+    background-color: #fff;
+    padding: 10px; box-sizing: border-box;
+    padding-top: 38px;                    /* handle height */
+}
+.playerKiosque .slidemenu.slideupmenu .handle {
+    position: absolute; width: 100%;
+    top: 0px;                            /* le handle doit être intégré dans content via un padding car le calcul du décalage est fait comme ça: contentHeight - handleHeight */
+    height: 6px;
+    border-top: 0px none transparent;
+    border-bottom: 0px none transparent;
+    background: none;
+    background-color: var(--background-color-handle);
+}
+.playerKiosque .slidemenu.slideupmenu .subhandle {
+    background-position: 0% 0%;
+    left: 50%;
+    transform: translateX(-50px);
+    width: 100px;
+    height: 40px;
+    position: relative;
+    bottom: 40px;
+    oborder: 1px dashed red;
+}
+.playerKiosque .slidemenu.slideupmenu .content {
+    padding-top: 6px;                    /* handle height */
+    background-color: var(--background-color-slideMenu);
+}
+@media (max-width: 500px) {
+    .playerKiosque .slidemenu.slideupmenu .content {
+        padding: 2px; padding-top: 6px; padding-left: 6px;
+    }
+}
+/* ----------------------------------------------------------------------------------- */
+/* left version */
+.slidemenu.slideleftmenu {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0px;
+    display: inline-block;                /* on ne veut pas forcer la largeur, mais on veut que cela s'adapte au contenu */
+    /* left va être calculé */
+}
+.slidemenu.slideleftmenu .slidemenu-0 {
+    position: relative;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.slidemenu.slideleftmenu  .handle {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    border-top: 1px solid #532500;
+    border-bottom: 1px solid #111;
+    background: url('css/handle.png') no-repeat 50% 50%, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.1, #666), color-stop(0.8, #222));
+    /*    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.7);*/
+    background: url('css/handle.png') no-repeat 50% 50%, -moz-linear-gradient(top, #999, #666 2%, #222);
+    background: url('css/handle.png') no-repeat 50% 50%, -o-linear-gradient(top, #999, #666 2%, #222);
+    width: 28px;
+}
+.slidemenu.slideleftmenu .content {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    background-color: red;
+    padding: 10px; box-sizing: border-box;
+    padding-right: 38px;                    /* handle width */
+}
+
+.playerKiosque .slidemenu.slideleftmenu  .handle {
+    width: 6px;
+    border-top: 0px none transparent;
+    border-bottom: 0px none transparent;
+    background: none;
+    background-color: var(--background-color-handle);
+}
+.playerKiosque .slidemenu.slideleftmenu .subhandle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50px);
+    height: 100px;
+    left: 6px;
+    width: 40px;
+    background-position: 0% 0%;
+}
+
+#dialog-list {
+    background-color: var(--background-color-slideMenu);
+}
+
+.dialog-content-0 {
+    background-color: var(--background-color-slideMenu);
+}
+
+.greenSubHandleBlack {
+    background-image: url('icons/icon-open-left-green-black.png');
+}
+
+.greenSubHandleWhite {
+    background-image: url('icons/icon-open-left-green-white.png');
+}
+
+.iconOpenWhite {
+    background-image: url('icons/icon-open-white.png');
+}
+
+.iconOpenBlack {
+    background-image: url('icons/icon-open-black.png');
+}
+
+.text-from-harry .playerKiosque .slidemenu.slideleftmenu .subhandle {
+    background-image: var(--icon-open-left-orange);
+}
+.playerKiosque .slidemenu.slideleftmenu.slidetopleft .subhandle {
+    top: 100px;
+}
+.playerKiosque .slidemenu.slideleftmenu .content {
+    padding-right: 6px;                    /* handle width */
+    background-color: var(--background-color-slideMenu);
+}
+
+.playerKiosque .slidemenu { visibility: hidden; }        /* display none make impossible to calculate content size */
+
+/* debug */
+    .oslidemenu DIV { border: 3px dashed red; box-sizing: border-box; margin: 10px; padding: 10px; }
+    HTML { oborder: 3px dashed orangered; box-sizing: border-box; margin: 0px; padding: 0px; }
+    BODY { oborder: 3px dashed pink; box-sizing: border-box; margin: 0px; padding: 0px; }
+
+
+

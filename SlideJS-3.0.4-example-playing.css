@@ -1,0 +1,284 @@
+    /*body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      padding-top:70px;
+    }*/
+
+    #slides {
+      odisplay: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(/library/SlidesJS-3.0.4/examples/playing/img/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+
+    a.slidesjs-next {
+      margin-right:10px;
+      background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(/library/SlidesJS-3.0.4/examples/playing/img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+
+    #slides {
+      odisplay: none
+    }
+
+    /*.container {
+		width: 100%;
+		height: 100%;
+      margin: 0 auto
+    }*/
+/*	
+	/ * min-width 979 max-width 1200 * /
+    .container {
+      width: 768px;
+    }
+
+    / * For tablets & smart phones * /
+    @media (max-width: 767px) {
+      / *body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }* /
+      .container {
+        width: auto;
+		width: 480px;
+      }
+	}
+
+    / * For smartphones * /
+    @media (max-width: 480px) {
+      .container {
+        width: auto;
+		width: 320px;
+      }
+    }
+
+    / * For smaller displays like laptops * /
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 624px;		/ * 724px - 100 * /
+		width: 640px;
+      }
+    }
+
+    / * For larger displays * /
+    @media (min-width: 1200px) {
+      .container {
+        width: 1070px;		/ * 1170px - 100 * /
+		width: 1024px;
+      }
+    }
+*/
+	/*------------------------------------------------------------------*/
+/*
+	#slides::before{
+		content: "min 979 max 1200";
+		color: red;
+	}
+
+    @media (max-width: 767px) {
+		#slides::before{
+			content: "max 767";
+			color: red;
+		}
+	}
+
+    @media (max-width: 480px) {
+		#slides::before{
+			content: "max 480";
+			color: red;
+		}
+    }
+
+    @media (min-width: 768px) and (max-width: 979px) {
+		#slides::before{
+			content: "min 768 max 979";
+			color: red;
+		}
+    }
+
+    @media (min-width: 1200px) {
+		#slides::before{
+			content: "min 1200";
+			color: red;
+		}
+    }
+*/
+/*
+    @media (max-height: 800px) {
+		.container {
+			width: 480px;
+		}
+	}
+
+	@media (max-height: 600px) {
+		.container {
+			width: 320px;
+		}
+	}
+
+    @media (min-height: 800px) {
+		.container {
+			width: 640px;
+		}
+	}
+*/
+/*
+	@media (max-height: 800px) {
+		#slides::after{
+			content: "max-height 800";
+			color: red;
+		}
+	}
+
+	@media (max-height: 600px) {
+		#slides::after{
+			content: "max-height 700";
+			color: red;
+		}
+	}
+
+    @media (min-height: 800px) {
+		#slides::after{
+			content: "min-height 800";
+			color: red;
+		}
+	}
+*/
+	#slides {
+		background-color: #e0e0e0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		overflow: hidden;		/* évite l'affichage des scrollbars à cause de pagination, navigation relative top -26px */
+	}
+	.slidesjs-container-0 {
+		background-color: #f0f0f0;
+		oposition: absolute;
+		otop: 100px; otop: 10px;
+		oleft: 100px; oleft: 10px;
+		oright: 100px; oright: 10px;
+		obottom: 140px; obottom: 50px;
+		width: auto;		/* 100% dans SlideJS-3.0.4-example-playing.css */
+		height: auto;
+		opadding-bottom: 40px;
+		obox-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto
+	}
+	.slidesjs-container {
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.slidesjs-control {			/* contient les IMG */
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.slidesjs-pagination {			/* UL */
+		position: relative;
+		top: -26px;
+	}
+	.slidesjs-navigation {			/* A */
+		position: relative;
+		top: -26px;
+	}
+	/*
+		sla-diaporama-container slidesjs-container-0
+			slides
+				slidesjs-container
+					slidesjs-control
+						IMG
+				A
+				UL
+	*/

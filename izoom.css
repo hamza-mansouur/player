@@ -1,0 +1,58 @@
+    #wrapper {
+        opadding: 10px;
+        overflow: hidden;
+        background-color: #d0d0d0;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #scroller {
+        /*    -webkit-touch-callout:none; */
+        o-webkit-tap-highlight-color:rgba(0,0,0,0);        /* produce white flick */
+        padding: 0;
+        obackground-color: #b0b0b0;
+        background-color: transparent;
+        float: left;
+        oz-index: 10;
+        oposition: absolute;
+        margin: 8px;
+        oborder: 4px solid red;
+        oopacity: 0.5;
+        obackground-color: red;
+    }
+
+        #backPrevPage, #backNextPage {
+            width:50%;
+            height:100%;
+            position: absolute;
+            top: 0;   
+            cursor:pointer;
+            z-index: 2;
+        }
+        #backPrevPage {
+            left: 0;
+        }
+        #backNextPage {
+            left: 50%;
+        }        
+        #backPrevPage.inactiveBackNav, #backNextPage.inactiveBackNav {
+            cursor: default !important;
+        } 
+        /* Pas besoin de hover
+        #backPrevPage:hover, #backNextPage:hover {
+            background-color: lightgrey;
+            opacity: 0.3;
+        } 
+        */
+        #backPrevPage.inactiveBackNav:hover, #backNextPage.inactiveBackNav:hover {
+            background-color: transparent !important;
+        }
+        
+        .izoom-draggable {
+            -webkit-user-drag: none;
+        }
